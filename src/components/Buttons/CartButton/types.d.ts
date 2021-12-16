@@ -1,4 +1,6 @@
-export interface Props {
+import { PropsBase } from '../types';
+
+export interface Props extends PropsBase {
   /**
    * What background color to use
    */
@@ -8,15 +10,7 @@ export interface Props {
    */
   color?: string;
   /**
-   * Button text content
-   */
-  label: string;
-  /**
    * Is outlined?
    */
   outline?: boolean;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
 }
