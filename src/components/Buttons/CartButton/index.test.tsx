@@ -24,7 +24,7 @@ test('renders CartButton with transparent style', () => {
   expect(tree).toHaveStyleRule('color', '#292C35');
 });
 
-test('renders Checkout button', () => {
+test('renders MainButton with checkout label', () => {
   render(<CartButton label="Checkout" />);
   const buttonElement = screen.getByText(/Checkout/i);
 
