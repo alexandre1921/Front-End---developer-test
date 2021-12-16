@@ -25,3 +25,6 @@ yarn-error.log*
 # package manager
 yarn.lock
 package-lock.json
+
+# tests
+*.snap
