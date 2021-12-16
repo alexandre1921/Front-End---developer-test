@@ -1,15 +1,14 @@
 import styled, { css } from 'styled-components';
-import { ButtonStyledBase } from '../styles';
 
 interface ButtonStyledProps {
   outline?: boolean;
 }
 
-export const ButtonStyled = styled(ButtonStyledBase)<ButtonStyledProps>`
+export const ButtonStyled = styled.button<ButtonStyledProps>`
   border-radius: 20px;
   width: 266px;
   height: 45px;
-  background-color: ${(props) => props.backgroundColor};
+  background-color: #292c35;
   text-transform: uppercase;
   font-size: 21px;
   font-family: Montserrat;
@@ -19,7 +18,7 @@ export const ButtonStyled = styled(ButtonStyledBase)<ButtonStyledProps>`
   ${(props) =>
     props.outline &&
     css`
-      border: 2px solid ${props.backgroundColor};
+      border: 2px solid #292c35;
       background-color: transparent;
     `};
 `;

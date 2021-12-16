@@ -4,11 +4,7 @@ import CartButton from './index';
 
 export default {
   title: 'Buttons/CartButton',
-  component: CartButton,
-  argTypes: {
-    label: { control: 'text' },
-    backgroundColor: { control: 'color' }
-  }
+  component: CartButton
 } as ComponentMeta<typeof CartButton>;
 
 const Template: ComponentStory<typeof CartButton> = (args) => <CartButton {...args} />;

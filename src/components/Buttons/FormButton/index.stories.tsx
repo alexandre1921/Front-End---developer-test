@@ -4,11 +4,7 @@ import FormButton from './index';
 
 export default {
   title: 'Buttons/FormButton',
-  component: FormButton,
-  argTypes: {
-    label: { control: 'text' },
-    backgroundColor: { control: 'color' }
-  }
+  component: FormButton
 } as ComponentMeta<typeof FormButton>;
 
 const Template: ComponentStory<typeof FormButton> = (args) => <FormButton {...args} />;

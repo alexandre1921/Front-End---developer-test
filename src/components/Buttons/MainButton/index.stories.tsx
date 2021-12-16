@@ -4,11 +4,7 @@ import MainButton from './index';
 
 export default {
   title: 'Buttons/MainButton',
-  component: MainButton,
-  argTypes: {
-    label: { control: 'text' },
-    backgroundColor: { control: 'color' }
-  }
+  component: MainButton
 } as ComponentMeta<typeof MainButton>;
 
 const Template: ComponentStory<typeof MainButton> = (args) => <MainButton {...args} />;

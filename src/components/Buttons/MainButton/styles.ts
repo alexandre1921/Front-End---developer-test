@@ -1,7 +1,11 @@
 import styled from 'styled-components';
-import { ButtonStyledBase } from '../styles';
 
-export const ButtonStyled = styled(ButtonStyledBase)`
+interface ButtonStyledProps {
+  backgroundColor: string;
+}
+
+export const ButtonStyled = styled.button<ButtonStyledProps>`
+  border: none;
   border-radius: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
