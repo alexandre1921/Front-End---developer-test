@@ -6,7 +6,7 @@ import MainButton from './index';
 import { ButtonStyled } from './styles';
 import 'jest-styled-components';
 
-test('renders button with style', () => {
+test('renders MainButton with style', () => {
   const tree = renderer.create(<ButtonStyled backgroundColor="#6356a5" />).toJSON();
 
   expect(tree).toMatchSnapshot();
