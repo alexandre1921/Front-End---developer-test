@@ -5,6 +5,7 @@ interface ButtonStyledProps {
 }
 
 export const ButtonStyled = styled.button<ButtonStyledProps>`
+  border: none;
   border-radius: 20px;
   width: 266px;
   height: 45px;
