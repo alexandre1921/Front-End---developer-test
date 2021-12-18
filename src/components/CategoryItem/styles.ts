@@ -61,7 +61,7 @@ export const CategoryItemContainer = styled.div`
   }
 
   > div.content {
-    max-width: 250px;
+    max-width: 270px;
 
     ${CategoryItemDescription} {
       margin: 0;
