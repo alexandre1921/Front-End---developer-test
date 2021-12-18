@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import FormButton from './index';
 
 export default {
-  title: 'Buttons/FormButton',
+  title: 'Components/Buttons/FormButton',
   component: FormButton
 } as ComponentMeta<typeof FormButton>;
 

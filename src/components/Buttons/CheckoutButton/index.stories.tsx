@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import CheckoutButton from './index';
 
 export default {
-  title: 'Buttons/CheckoutButton',
+  title: 'Components/Buttons/CheckoutButton',
   component: CheckoutButton
 } as ComponentMeta<typeof CheckoutButton>;
 

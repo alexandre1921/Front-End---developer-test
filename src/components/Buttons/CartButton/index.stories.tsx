@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import CartButton from './index';
 
 export default {
-  title: 'Buttons/CartButton',
+  title: 'Components/Buttons/CartButton',
   component: CartButton
 } as ComponentMeta<typeof CartButton>;
 
