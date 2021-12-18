@@ -18,10 +18,11 @@ export const CategoryItemShowStatusColor = styled.div<CategoryItemShowStatusProp
 
 export const CategoryItemDescription = styled.h4`
   text-align: left;
-  font-size: 17px;
+  font-size: 15px;
   font-family: Helvetica;
   font-weight: medium;
   color: #000000;
+  opacity: 0.5;
 
   white-space: nowrap;
   overflow: hidden;
@@ -30,11 +31,10 @@ export const CategoryItemDescription = styled.h4`
 
 export const CategoryItemName = styled.h5`
   text-align: left;
-  font-size: 15px;
+  font-size: 17px;
   font-family: Helvetica;
   font-weight: medium;
   color: #000000;
-  opacity: 0.5;
 
   white-space: nowrap;
   overflow: hidden;
