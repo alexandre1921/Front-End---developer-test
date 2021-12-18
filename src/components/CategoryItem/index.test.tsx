@@ -36,7 +36,7 @@ test('renders CategoryItem is active', () => {
   expect(treeText).toHaveStyleRule('color', '#FEC92E');
 });
 
-test('renders CategoryItem for unlogged users', () => {
+test('renders CategoryItem with strategy category', () => {
   render(
     <Component
       name="Strategy"
