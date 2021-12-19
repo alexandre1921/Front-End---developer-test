@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FollowButton } from '../../../Buttons';
+import { FollowButton } from 'components/Buttons';
 import { AuthorInfoAvatar, AuthorInfoContainer, AuthorInfoName, AuthorInfoRole } from './styles';
 import { Props } from './types';
 

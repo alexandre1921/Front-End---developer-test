@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonStyled as FollowButton } from '../../../Buttons/FollowButton/styles';
+import { ButtonStyled as FollowButton } from 'components/Buttons/FollowButton/styles';
 
 export const AuthorInfoAvatar = styled.img`
   width: 30px;
