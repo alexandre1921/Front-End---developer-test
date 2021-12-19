@@ -9,7 +9,7 @@ const Component: FC<Props> = ({ categories }: Props) => {
       {categories.map((category, index) => (
         <CategoryItem
           key={category.id}
-          position={index.toString().padStart(2, '0')}
+          position={(index + 1).toString().padStart(2, '0')}
           {...category}
         />
       ))}
