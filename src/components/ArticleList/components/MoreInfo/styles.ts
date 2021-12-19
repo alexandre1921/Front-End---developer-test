@@ -18,15 +18,15 @@ export const MoreInfoDescription = styled.h4`
 `;
 
 export const CategoryItemContainer = styled.div`
-  ${MoreInfoTitle} {
+  > ${MoreInfoTitle} {
     margin: 0;
   }
 
-  ${MoreInfoDescription} {
+  > ${MoreInfoDescription} {
     margin: 0;
   }
 
-  ${MoreInfoDescription} + ${MoreInfoTitle} {
+  > ${MoreInfoDescription} + ${MoreInfoTitle} {
     margin-top: 2px;
   }
 `;
