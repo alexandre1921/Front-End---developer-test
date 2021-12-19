@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import CategoryItem from '../CategoryItem/component';
+import CategoryItem from './components/CategoryItem/component';
 import { CategoryListContainer } from './styles';
 import { Props } from './types';
 

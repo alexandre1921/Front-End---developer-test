@@ -1,4 +1,4 @@
-import { Props as CategoryItemProps } from '../CategoryItem/types';
+import { Props as CategoryItemProps } from './components/CategoryItem/types';
 
 interface CategoryItemPropsWithId extends Omit<CategoryItemProps, 'position'> {
   id: string;
