@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 export const InputStyled = styled.input`
   border: 1px solid #00000042;
   border-radius: 4px;
-  font-size: 21px;
+  font-size: 18px;
   font-family: Roboto;
-  padding: 16px;
+  padding: 14px;
 `;
 
 interface InputPlaceholderProps {
@@ -13,7 +13,7 @@ interface InputPlaceholderProps {
 }
 
 export const InputPlaceholder = styled.h5<InputPlaceholderProps>`
-  font-size: 16px;
+  font-size: 14px;
   font-family: Roboto;
   color: #3d3d3d;
   background-color: #ffffff;
@@ -26,6 +26,8 @@ export const InputPlaceholder = styled.h5<InputPlaceholderProps>`
 `;
 
 export const InputContainer = styled.div`
+  display: flex;
+
   > ${InputPlaceholder} {
     position: absolute;
     margin: 0px;
@@ -34,6 +36,8 @@ export const InputContainer = styled.div`
     padding-left: 5px;
     padding-right: 5px;
   }
+
   > ${InputStyled} {
+    flex: 1;
   }
 `;
