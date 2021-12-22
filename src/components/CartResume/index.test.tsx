@@ -7,8 +7,7 @@ import {
   CartResumeContainer,
   CartResumeTitle,
   CartResumeTotal,
-  CartResumeValueContainer,
-  HR
+  CartResumeValueContainer
 } from './styles';
 import 'jest-styled-components';
 
@@ -17,13 +16,11 @@ test('renders CartInput with style', () => {
   const treeTitle = renderer.create(<CartResumeTitle />).toJSON();
   const treeTotal = renderer.create(<CartResumeTotal />).toJSON();
   const treeValue = renderer.create(<CartResumeValueContainer isShown={false} />).toJSON();
-  const treeHR = renderer.create(<HR />).toJSON();
 
   expect(treeContainer).toMatchSnapshot();
   expect(treeTitle).toMatchSnapshot();
   expect(treeTotal).toMatchSnapshot();
   expect(treeValue).toMatchSnapshot();
-  expect(treeHR).toMatchSnapshot();
 });
 
 test('renders CartInput with style', () => {
@@ -41,14 +38,14 @@ test('renders CartInput with style', () => {
 test('renders CartInput', () => {
   const props = {
     discount: 'R$ 2,98',
-    subTotal: 'R$ 29,80',
+    subtotal: 'R$ 29,80',
     total: 'R$ 26,82'
   };
   render(<CartInput {...props} />);
 
   const titleElement = screen.getByText(/Resume/i);
   const inputElement = screen.getByPlaceholderText(/Discount coupon/i);
-  const subTotalElement = screen.getByText(/Subtotal/i);
+  const subtotalElement = screen.getByText(/Subtotal/i);
   const discountElement = screen.getByText(/Discount\s/);
   const totalElement = screen.getByText(/Total/);
   const checkoutElement = screen.getByText(/CHECKOUT/i);
@@ -56,7 +53,7 @@ test('renders CartInput', () => {
 
   expect(titleElement).toBeInTheDocument();
   expect(inputElement).toBeInTheDocument();
-  expect(subTotalElement).toBeInTheDocument();
+  expect(subtotalElement).toBeInTheDocument();
   expect(discountElement).toBeInTheDocument();
   expect(totalElement).toBeInTheDocument();
   expect(checkoutElement).toBeInTheDocument();

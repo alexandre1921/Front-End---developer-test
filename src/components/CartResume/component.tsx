@@ -1,18 +1,18 @@
 import { CartButton } from 'components/Buttons';
+import HR from 'components/HR';
 import { FC } from 'react';
 import CartInput from './components/CartInput';
 import {
   CartResumeContainer,
   CartResumeTitle,
   CartResumeValueContainer,
-  CartResumeTotal,
-  HR
+  CartResumeTotal
 } from './styles';
 import { Props } from './types';
 
 const Component: FC<Props> = ({
   discount,
-  subTotal,
+  subtotal,
   total,
   handleOnClickCheckout,
   handleOnClickKeepBuying
@@ -23,7 +23,7 @@ const Component: FC<Props> = ({
       <CartInput placeholder="Discount coupon" />
       <CartResumeValueContainer>
         <b>Subtotal</b>
-        <p>{subTotal}</p>
+        <p>{subtotal}</p>
       </CartResumeValueContainer>
       <CartResumeValueContainer isShown={!!discount}>
         <b>Discount</b>

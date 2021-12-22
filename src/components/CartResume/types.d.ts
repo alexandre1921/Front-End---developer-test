@@ -6,7 +6,7 @@ export interface Props {
   /**
    * Subtotal from all cart items
    */
-  subTotal: string;
+  subtotal: string;
   /**
    * Calculated value with discount
    */

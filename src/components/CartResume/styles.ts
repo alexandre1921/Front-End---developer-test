@@ -1,4 +1,5 @@
 import { ButtonStyled as CartButton } from 'components/Buttons/CartButton/styles';
+import HR from 'components/HR';
 import styled, { css } from 'styled-components';
 import { InputContainer as CartInput } from './components/CartInput/styles';
 
@@ -46,11 +47,6 @@ export const CartResumeTotal = styled.div`
     letter-spacing: 0px;
     color: #17181d;
   }
-`;
-
-export const HR = styled.div`
-  border: 1px solid #707070;
-  opacity: 0.3;
 `;
 
 export const CartResumeContainer = styled.div`
