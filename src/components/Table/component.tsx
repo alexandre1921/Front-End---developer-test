@@ -10,7 +10,7 @@ const Component: FC<Props> = ({ headers, lines, isLinesDeletable = false }: Prop
   const linesData = lines.map((line) => (
     <tr>
       {listColumns(line, TableData)}
-      <TableData isShown={isLinesDeletable}>
+      <TableData className="trash" isShown={isLinesDeletable}>
         <button type="button">
           <FiTrash2 />
         </button>
@@ -22,7 +22,9 @@ const Component: FC<Props> = ({ headers, lines, isLinesDeletable = false }: Prop
     <TableContainer>
       <tr>
         {listColumns(headers, TableHeader)}
-        <TableData isShown={isLinesDeletable}>&nbsp;</TableData>
+        <TableData className="trash" isShown={isLinesDeletable}>
+          &nbsp;
+        </TableData>
       </tr>
       {linesData}
     </TableContainer>

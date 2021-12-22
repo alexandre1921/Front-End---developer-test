@@ -42,7 +42,10 @@ export const TableContainer = styled.table`
     }
     > td {
       max-width: 210px;
-      padding-right: 50px;
+
+      &:not(.trash) {
+        padding-right: 50px;
+      }
     }
   }
 `;
