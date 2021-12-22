@@ -7,6 +7,8 @@ export const CartResumeTitle = styled.h2`
   font: normal normal normal 24px/32px Montserrat;
   letter-spacing: 0px;
   color: #17181d;
+
+  margin: 0;
 `;
 
 interface CartResumeValueContaineProps {
@@ -14,7 +16,16 @@ interface CartResumeValueContaineProps {
 }
 
 export const CartResumeValueContainer = styled.div<CartResumeValueContaineProps>`
+  align-items: center;
   display: flex;
+
+  > * {
+    margin: 0;
+  }
+
+  > :nth-child(1) {
+    flex: 1;
+  }
 
   > p {
     font: normal normal 500 14px/21px Montserrat;
@@ -36,6 +47,16 @@ export const CartResumeValueContainer = styled.div<CartResumeValueContaineProps>
 `;
 
 export const CartResumeTotal = styled.div`
+  align-items: center;
+
+  > * {
+    margin: 0;
+  }
+
+  > :nth-child(1) {
+    flex: 1;
+  }
+
   > p {
     font: normal normal 600 14px/21px Montserrat;
     letter-spacing: 0px;
@@ -51,8 +72,6 @@ export const CartResumeTotal = styled.div`
 
 export const CartResumeContainer = styled.div`
   > ${CartResumeTitle} {
-    margin: 0;
-
     & + ${CartInput} {
       margin-top: 60px;
 
@@ -64,22 +83,10 @@ export const CartResumeContainer = styled.div`
 
   > ${CartResumeValueContainer} {
     margin-bottom: 16px;
-
-    & > * {
-      margin: 0;
-    }
   }
 
   > ${CartResumeValueContainer} + ${HR} {
     margin-top: 24px;
-  }
-
-  > ${CartResumeValueContainer}, > ${CartResumeTotal} {
-    align-items: center;
-
-    > :nth-child(1) {
-      flex: 1;
-    }
   }
 
   > ${CartResumeTotal} {
