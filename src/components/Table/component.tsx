@@ -6,8 +6,8 @@ import { Props } from './types';
 const listColumns = (columns: string[], Component: FC) =>
   columns.map((column) => <Component>{column}</Component>);
 
-const Component: FC<Props> = ({ headers, lines, isLinesDeletable = false }: Props) => {
-  const linesData = lines.map((line) => (
+const listData = (lines: string[][], isLinesDeletable: boolean) =>
+  lines.map((line) => (
     <tr>
       {listColumns(line, TableData)}
       <TableData className="trash" isShown={isLinesDeletable}>
@@ -18,15 +18,18 @@ const Component: FC<Props> = ({ headers, lines, isLinesDeletable = false }: Prop
     </tr>
   ));
 
+const Component: FC<Props> = ({ headers, lines, isLinesDeletable = false }: Props) => {
   return (
     <TableContainer>
-      <tr>
-        {listColumns(headers, TableHeader)}
-        <TableData className="trash" isShown={isLinesDeletable}>
-          &nbsp;
-        </TableData>
-      </tr>
-      {linesData}
+      <thead>
+        <tr>
+          {listColumns(headers, TableHeader)}
+          <TableData className="trash" isShown={isLinesDeletable}>
+            &nbsp;
+          </TableData>
+        </tr>
+      </thead>
+      <tbody>{listData(lines, isLinesDeletable)}</tbody>
     </TableContainer>
   );
 };

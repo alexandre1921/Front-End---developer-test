@@ -37,15 +37,12 @@ export const TableData = styled.td<TableColumnProps>`
 `;
 
 export const TableContainer = styled.table`
-  > tr {
-    > th {
-    }
-    > td {
-      max-width: 210px;
+  > tbody tr td {
+        max-width: 210px;
 
-      &:not(.trash) {
-        padding-right: 50px;
+        &:not(.trash) {
+          padding-right: 50px;
+        }
       }
-    }
   }
 `;
