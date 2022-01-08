@@ -1,6 +1,6 @@
 import { CartResumeTitle, CartResumeValueContainer } from 'components/CartResume/styles';
 import HR from 'components/HR';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const YourCartContainer = styled.div`
   width: 680px;
