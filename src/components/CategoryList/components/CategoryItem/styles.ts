@@ -9,7 +9,7 @@ export const CategoryItemShowStatusText = styled.h3<CategoryItemShowStatusProps>
   font-size: 23px;
   font-family: Helvetica;
   font-weight: medium;
-  color: ${(props) => (props.active ? '#FEC92E' : '#F5F6F9')};
+  color: ${(props) => (props.active ? '#FEC92E' : '#A9A7B1')};
 `;
 
 export const CategoryItemShowStatusColor = styled.div<CategoryItemShowStatusProps>`
