@@ -1,9 +1,10 @@
-import { Props as CategoryItemProps } from './components/CategoryItem/types';
+import { ICategory } from 'models/category';
 
-interface CategoryItemPropsWithId extends Omit<CategoryItemProps, 'position'> {
-  id: string;
+interface CategoryItemProps extends ICategory {
+  active: boolean;
 }
 
 export interface Props {
-  categories: Array<CategoryItemPropsWithId>;
+  categories: Array<CategoryItemProps>;
+  handleOnClickCategory?(id?: string): void;
 }

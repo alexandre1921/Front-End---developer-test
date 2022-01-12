@@ -44,6 +44,7 @@ export const CategoryItemName = styled.h5`
 export const CategoryItemContainer = styled.div`
   display: flex;
   height: 34px;
+  cursor: pointer;
 
   > div.position {
     margin-right: 14px;
